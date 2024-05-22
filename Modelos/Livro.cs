@@ -15,7 +15,7 @@ internal class Livro
         Descricao = descricao;
     }
 
-    private string Titulo { get; set; }
+    public string Titulo { get; }
     private string Autor { get; set; }
     private string Descricao { get; set; }
 
