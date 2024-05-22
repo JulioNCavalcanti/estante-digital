@@ -28,11 +28,11 @@ internal class Livro
         Console.WriteLine();
     }
 
-    public static void ExibirTodosOsLivros(List<Livro> livros)
+    public static void ExibirTodosOsLivros(Dictionary<string, Livro> livros)
     {
         foreach (var livro in livros)
         {
-            livro.ExibirDetalhes();
+            livro.Value.ExibirDetalhes();
         }
     }
 }
