@@ -16,11 +16,13 @@ internal class Menu
         opcoes.Add(1, new MenuAdicionarLivro());
         opcoes.Add(2, new MenuListarTodosOsLivros());
         opcoes.Add(3, new MenuRemoverUmLivro());
+        opcoes.Add(0, new MenuSair());
 
         Console.WriteLine(" ---------------------------- ");
         Console.WriteLine("| 1 | Adicionar um livro     |");
         Console.WriteLine("| 2 | Listar todos os livros |");
         Console.WriteLine("| 3 | Remover um livro       |");
+        Console.WriteLine("| 0 | Sair                   |");
         Console.WriteLine(" ---------------------------- ");
 
         Console.Write("Digite a opção que deseja: ");
