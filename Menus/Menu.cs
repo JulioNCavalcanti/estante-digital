@@ -15,10 +15,12 @@ internal class Menu
         Dictionary<int, Menu> opcoes = new();
         opcoes.Add(1, new MenuAdicionarLivro());
         opcoes.Add(2, new MenuListarTodosOsLivros());
+        opcoes.Add(3, new MenuRemoverUmLivro());
 
         Console.WriteLine(" ---------------------------- ");
         Console.WriteLine("| 1 | Adicionar um livro     |");
         Console.WriteLine("| 2 | Listar todos os livros |");
+        Console.WriteLine("| 3 | Remover um livro       |");
         Console.WriteLine(" ---------------------------- ");
 
         Console.Write("Digite a opção que deseja: ");
