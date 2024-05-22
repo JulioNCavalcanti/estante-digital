@@ -16,15 +16,15 @@ internal class Livro
     }
 
     public string Titulo { get; }
-    private string Autor { get; set; }
+    public string Autor { get; set; }
     private string Descricao { get; set; }
 
-    public void ExibirDetalhes()
+    public static void ExibirDetalhes(Livro livro)
     {
         Console.WriteLine();
-        Console.WriteLine($"Título: {Titulo}");
-        Console.WriteLine($" - Autor: {Autor}");
-        Console.WriteLine($" - Descrição: {Descricao}");
+        Console.WriteLine($"Título: {livro.Titulo}");
+        Console.WriteLine($" - Autor: {livro.Autor}");
+        Console.WriteLine($" - Descrição: {livro.Descricao}");
         Console.WriteLine();
     }
 
@@ -32,7 +32,7 @@ internal class Livro
     {
         foreach (var livro in livros)
         {
-            livro.Value.ExibirDetalhes();
+            ExibirDetalhes(livro.Value);
         }
     }
 }
